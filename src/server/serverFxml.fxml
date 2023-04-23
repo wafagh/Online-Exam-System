@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="server.ServerPortFrameController">
+   <children>
+      <TableView fx:id="tableServer" layoutX="30.0" layoutY="70.0" prefHeight="336.0" prefWidth="706.0">
+        <columns>
+          <TableColumn fx:id="colHostName" prefWidth="218.39996337890625" text="Host Name" />
+          <TableColumn fx:id="colIP" prefWidth="267.2000427246094" text="IP" />
+            <TableColumn fx:id="colStatus" prefWidth="220.0" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="316.0" layoutY="14.0" prefHeight="36.0" prefWidth="134.0" text="SERVER">
+         <font>
+            <Font name="Audiowide" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="528.0" layoutY="431.0" mnemonicParsing="false" onAction="#getExitBtn" prefHeight="39.0" prefWidth="162.0" style="-fx-background-color: red;" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="Audiowide" size="16.0" />
+         </font></Button>
+      <Button layoutX="50.0" layoutY="431.0" mnemonicParsing="false" onAction="#startServerBtn" prefHeight="39.0" prefWidth="162.0" style="-fx-background-color: #4754a2;" text="Start Server" textFill="WHITE">
+         <font>
+            <Font name="Audiowide" size="16.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

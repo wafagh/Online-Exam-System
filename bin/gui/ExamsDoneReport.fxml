@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ExamsReportLecturerController">
+   <children>
+      <Text layoutX="154.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exams Done" textAlignment="CENTER" wrappingWidth="359.65045166015625">
+         <font>
+            <Font name="Audiowide" size="28.0" />
+         </font>
+      </Text>
+      <TableView fx:id="examsTbl" layoutX="28.0" layoutY="94.0" prefHeight="386.0" prefWidth="475.0">
+        <columns>
+          <TableColumn fx:id="Examid" prefWidth="103.99994468688965" text="Exam ID" />
+          <TableColumn fx:id="Topic" prefWidth="119.20001220703125" text="Topic" />
+            <TableColumn fx:id="Course" prefWidth="120.0" text="Course" />
+            <TableColumn fx:id="ExamTime" prefWidth="130.3999816894531" text="Exam Time" />
+        </columns>
+      </TableView>
+      <Button fx:id="cancel_examreportForm" cancelButton="true" layoutX="526.0" layoutY="442.0" mnemonicParsing="false" onAction="#cancel_examreportForm" prefHeight="37.0" prefWidth="118.0" style="-fx-background-color: #e32021;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Audiowide" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="OpenReport_examreportForm" cancelButton="true" layoutX="526.0" layoutY="94.0" mnemonicParsing="false" onAction="#OpenReport_examreportForm" prefHeight="37.0" prefWidth="118.0" style="-fx-background-color: #4754a2;" text="Open Report" textFill="WHITE">
+         <font>
+            <Font name="Audiowide" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="ShowResults_examreportform" layoutX="526.0" layoutY="150.0" mnemonicParsing="false" onAction="#ShowResults_examreportform" prefHeight="37.0" prefWidth="118.0" style="-fx-background-color: #4754a2;" text="Show Results" textFill="WHITE" />
+   </children>
+</AnchorPane>

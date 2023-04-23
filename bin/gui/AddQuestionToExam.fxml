@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="861.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AddQuestionToExamController">
+   <children>
+      <Text layoutX="313.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Questions Bank" textAlignment="CENTER" wrappingWidth="236.94921875">
+         <font>
+            <Font name="Audiowide" size="28.0" />
+         </font>
+      </Text>
+      <TableView fx:id="questionsTbl" layoutX="24.0" layoutY="179.0" prefHeight="310.0" prefWidth="813.0">
+        <columns>
+          <TableColumn fx:id="idquest" prefWidth="174.0" text="Question serial number" />
+          <TableColumn fx:id="questtext" prefWidth="411.0" text="Question" />
+            <TableColumn fx:id="teachername" prefWidth="227.0" text="Tecaher name" />
+        </columns>
+      </TableView>
+      <Button fx:id="cancel_AddQuestionToExamController" layoutX="24.0" layoutY="501.0" mnemonicParsing="false" onAction="#cancel_AddQuestionToExamController" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: #e32021;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Audiowide" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="addquestion_AddQuestionToExamController" layoutX="735.0" layoutY="501.0" mnemonicParsing="false" onAction="#addquestion_AddQuestionToExamController" prefHeight="33.0" prefWidth="102.0" style="-fx-background-color: #4754a2;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="Audiowide" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="24.0" layoutY="138.0" text="Question Search :">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchtext_AddQuestionToExamController" layoutX="155.0" layoutY="139.0" prefHeight="26.0" prefWidth="367.0" />
+      <Button fx:id="search_AddQuestionToExamController" layoutX="550.0" layoutY="136.0" mnemonicParsing="false" onAction="#search_AddQuestionToExamController" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #4754a2;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="Audiowide" size="16.0" />
+         </font>
+      </Button>
+      <Text layoutX="24.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Topic :" wrappingWidth="50.2119140625">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Text>
+      <Label fx:id="Topic_AddQuestionToExamController" layoutX="74.0" layoutY="97.0" prefHeight="27.0" prefWidth="83.0" text="topic">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

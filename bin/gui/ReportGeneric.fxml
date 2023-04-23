@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ReportGeniricController">
+   <children>
+      <ImageView fitHeight="576.0" fitWidth="900.0">
+      
+      </ImageView>
+      <Label fx:id="changerLbl" Text="" layoutX="14.0" layoutY="101.0" prefHeight="32.0" prefWidth="255.0" textFill="RED">
+         <font>
+            <Font name="Agency FB" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="394.0" layoutY="14.0" text="Report">
+         <font>
+            <Font name="Audiowide" size="28.0" />
+         </font>
+      </Label>
+      <TableView fx:id="reportTBL" layoutX="10.0" layoutY="140.0" prefHeight="381.0" prefWidth="879.0">
+        <columns>
+          <TableColumn fx:id="courseT" prefWidth="75.0" text="Course" />
+            <TableColumn fx:id="topicT" prefWidth="75.0" text="topic" />
+          <TableColumn fx:id="AvgT" prefWidth="75.0" text="Average" />
+            <TableColumn fx:id="studentNumT" prefWidth="75.0" text="#Students" />
+            <TableColumn fx:id="StanDevT" prefWidth="125.0" text="Standard Deviation" />
+            <TableColumn fx:id="dateT" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="medianT" prefWidth="75.0" text="medianX" />
+            <TableColumn fx:id="highestT" prefWidth="114.0" text="Highest Grade" />
+            <TableColumn fx:id="lowestT" prefWidth="114.0" text="Lowest Grade" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="535.0" mnemonicParsing="false" onAction="#backBtn" prefHeight="26.0" prefWidth="125.0" style="-fx-background-color: #e32021;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Audiowide" size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="80.0" fitWidth="100.0">
+      
+      </ImageView>
+      <Button layoutX="759.0" layoutY="100.0" mnemonicParsing="false" onAction="#histogramBtn" prefHeight="33.0" prefWidth="126.0" style="-fx-background-color: #4754a2;" text="Histogram" textFill="WHITE">
+         <font>
+            <Font name="Audiowide" size="16.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

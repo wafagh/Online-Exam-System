@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ConfirmGradeController">
+   <children>
+      <Text layoutX="124.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Student Grade">
+         <font>
+            <Font name="Audiowide" size="28.0" />
+         </font></Text>
+      <Text layoutX="53.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID :" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font></Text>
+      <Text layoutX="53.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test grade :">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font></Text>
+      <RadioButton fx:id="confirmgrade_ConfirmGradeController" layoutX="53.0" layoutY="191.0" mnemonicParsing="false" text="Confirm student grade">
+         <font>
+            <Font name="Audiowide" size="12.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="Group" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="changegrade_ConfirmGradeController" layoutX="53.0" layoutY="224.0" mnemonicParsing="false" text="Change student grade" toggleGroup="$Group">
+         <font>
+            <Font name="Audiowide" size="12.0" />
+         </font></RadioButton>
+      <Text layoutX="53.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New grade :">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font></Text>
+      <TextField fx:id="newgrade_ConfirmGradeController" layoutX="150.0" layoutY="261.0" prefHeight="26.0" prefWidth="46.0" />
+      <Text layoutX="53.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comment :">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font></Text>
+      <TextArea fx:id="comments_ConfirmGradeController" layoutX="149.0" layoutY="300.0" prefHeight="118.0" prefWidth="312.0" />
+      <Button fx:id="cancel_ConfirmGradeController" layoutX="43.0" layoutY="443.0" mnemonicParsing="false" onAction="#cancel_ConfirmGradeController" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: #e32021;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Audiowide" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="save_ConfirmGradeController" layoutX="461.0" layoutY="443.0" mnemonicParsing="false" onAction="#save_ConfirmGradeController" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: #4754a2 #4754a2;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="Audiowide" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="answersTbl" layoutX="262.0" layoutY="71.0" prefHeight="200.0" prefWidth="322.0">
+        <columns>
+          <TableColumn fx:id="questionid" prefWidth="90.0" text="Question ID" />
+          <TableColumn fx:id="studentanswer" prefWidth="118.0" text="Student answer" />
+            <TableColumn fx:id="correctanswer" prefWidth="113.0" text="Correct answer" />
+        </columns>
+      </TableView>
+      <Label fx:id="StudentID_ConfirmGradeController" layoutX="144.0" layoutY="102.0" text="Student ID" />
+      <Label fx:id="testgrade_ConfirmGradeController" layoutX="142.0" layoutY="135.0" text="Test Grade" />
+   </children>
+</AnchorPane>

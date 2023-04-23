@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.StudentHomePageController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Button fx:id="ExamsGradebtn_Student" layoutX="430.0" layoutY="95.0" mnemonicParsing="false" onAction="#ExamsGradebtn_Student" prefHeight="74.0" prefWidth="159.0" style="-fx-background-color: #4754a2;" text="Exams Grades" textFill="WHITE">
+               <font>
+                  <Font name="Audiowide" size="16.0" />
+               </font></Button>
+            <Button fx:id="StartExamBtn_Student" layoutX="430.0" layoutY="204.0" mnemonicParsing="false" onAction="#StartExamBtn_Student" prefHeight="74.0" prefWidth="159.0" style="-fx-background-color: #4754a2;" text="Start an exam" textFill="WHITE">
+               <font>
+                  <Font name="Audiowide" size="16.0" />
+               </font></Button>
+            <Label layoutX="21.0" layoutY="119.0" prefHeight="27.0" prefWidth="82.0" text="First Name :">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="154.0" prefHeight="27.0" prefWidth="82.0" text="Last Name :">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="193.0" text="ID :">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="230.0" text="Faculty :">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="LogOutBtn_StudentHome" layoutX="33.0" layoutY="328.0" mnemonicParsing="false" onAction="#LogOutBtn_StudentHome" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #e32021;" text="LogOut" textFill="WHITE">
+               <font>
+                  <Font name="Audiowide" size="14.0" />
+               </font></Button>
+            <Label layoutX="162.0" prefHeight="36.0" prefWidth="315.0" text="Student Home Page">
+               <font>
+                  <Font name="Audiowide" size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="StudentFirstNameLbl_StudentHome" layoutX="109.0" layoutY="121.0" prefHeight="18.0" prefWidth="105.0" text="Label">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font></Label>
+            <Label fx:id="StudentIdLbl_StudentHome" layoutX="109.0" layoutY="193.0" prefHeight="18.0" prefWidth="105.0" text="Label">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font></Label>
+            <Label fx:id="StudentFacultyLbl_StudentHome" layoutX="109.0" layoutY="230.0" prefHeight="18.0" prefWidth="105.0" text="Label">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font></Label>
+            <Label fx:id="StudentLastNameLbl_StudentHome" layoutX="109.0" layoutY="158.0" prefHeight="18.0" prefWidth="105.0" text="Label">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Label>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

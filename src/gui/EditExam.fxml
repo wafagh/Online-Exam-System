@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="596.0" prefWidth="875.0" style="-fx-background-color: #eeeeee;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.EditExamController">
+   <children>
+      <Text layoutX="333.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam">
+         <font>
+            <Font name="Audiowide" size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="25.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Topic :">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="addquestion_EditExamController" layoutX="680.0" layoutY="129.0" mnemonicParsing="false" onAction="#addquestion_EditExamController" prefHeight="38.0" prefWidth="162.0" style="-fx-background-color: #4754a2;" text="Add question" textFill="WHITE">
+         <font>
+            <Font name="Audiowide" size="16.0" />
+         </font></Button>
+      <TableView fx:id="questionsTbl" layoutX="13.0" layoutY="232.0" prefHeight="306.0" prefWidth="849.0">
+         <columns>
+            <TableColumn fx:id="idquest" prefWidth="218.0" text="Question serial number" />
+            <TableColumn fx:id="questtext" prefWidth="630.4000183105469" text="Question " />
+         </columns>
+      </TableView>
+      <Text layoutX="20.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam time :">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="examtime_EditExamController" layoutX="106.0" layoutY="195.0" prefHeight="31.0" prefWidth="150.0" />
+      <Button fx:id="confirm_EditExamController" layoutX="705.0" layoutY="543.0" mnemonicParsing="false" onAction="#confirm_EditExamController" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: #4754a2;" text="Confirm" textFill="WHITE">
+         <font>
+            <Font name="Audiowide" size="16.0" />
+         </font></Button>
+      <Button fx:id="cancel_EditExamController" layoutX="50.0" layoutY="543.0" mnemonicParsing="false" onAction="#cancel_EditExamController" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: #e32021;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Audiowide" size="16.0" />
+         </font></Button>
+      <Text layoutX="21.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course :" wrappingWidth="72.3818359375">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="Course_EditExamController" layoutX="106.0" layoutY="141.0" prefHeight="31.0" prefWidth="150.0" />
+      <Button fx:id="deletequestion_EditExamController" layoutX="680.0" layoutY="183.0" mnemonicParsing="false" onAction="#deletequestion_EditExamController" prefHeight="38.0" prefWidth="162.0" style="-fx-background-color: #e32021;" text="Delete question" textFill="WHITE">
+         <font>
+            <Font name="Audiowide" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="Topic_EditExamController" layoutX="106.0" layoutY="87.0" prefHeight="31.0" prefWidth="150.0" text="Topic">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="ExamID_EditExamController" layoutX="424.0" layoutY="14.0" text="ExamID">
+         <font>
+            <Font name="Audiowide" size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="examcomments_EditExamController" layoutX="680.0" layoutY="73.0" mnemonicParsing="false" onAction="#examcomments_EditExamController" prefHeight="38.0" prefWidth="162.0" style="-fx-background-color: #4754a2;" text="Comments" textFill="WHITE">
+         <font>
+            <Font name="Audiowide" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

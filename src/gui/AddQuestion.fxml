@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="836.0" style="-fx-background-color: #eeeeee;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AddQuestionController">
+   <children>
+      <TextField fx:id="QuestionText_AddQuestionController" layoutX="170.0" layoutY="261.0" prefHeight="31.0" prefWidth="291.0" />
+      <Text layoutX="30.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter question :" wrappingWidth="153.10400390625">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font></Text>
+      <Text layoutX="37.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter first answer :">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font></Text>
+      <TextField fx:id="Answer1_AddQuestionController" layoutX="183.0" layoutY="337.0" prefHeight="31.0" prefWidth="375.0" />
+      <TextField fx:id="Answer2_AddQuestionController" layoutX="183.0" layoutY="378.0" prefHeight="31.0" prefWidth="375.0" />
+      <TextField fx:id="Answer3_AddQuestionController" layoutX="183.0" layoutY="420.0" prefHeight="31.0" prefWidth="375.0" />
+      <TextField fx:id="Answer4_AddQuestionController" layoutX="183.0" layoutY="462.0" prefHeight="31.0" prefWidth="375.0" />
+      <Text layoutX="37.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter second answer :">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font></Text>
+      <Text layoutX="37.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter third answer :" wrappingWidth="139.3212854862213">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font></Text>
+      <Text layoutX="37.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter fourth answer :">
+         <font>
+            <Font name="Agency FB" size="20.0" />
+         </font></Text>
+      <RadioButton fx:id="SelectAnswer1_AddQuestionController" layoutX="579.0" layoutY="342.0" mnemonicParsing="false" />
+      <RadioButton fx:id="SelectAnswer2_AddQuestionController" layoutX="579.0" layoutY="384.0" mnemonicParsing="false" />
+      <RadioButton fx:id="SelectAnswer3_AddQuestionController" layoutX="579.0" layoutY="427.0" mnemonicParsing="false" />
+      <RadioButton fx:id="SelectAnswer4_AddQuestionController" layoutX="579.0" layoutY="467.0" mnemonicParsing="false" />
+      <Text layoutX="552.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="right answer">
+         <font>
+            <Font name="Agency FB" size="18.0" />
+         </font></Text>
+      <Button fx:id="confirm_AddQuestionController" layoutX="635.0" layoutY="419.0" mnemonicParsing="false" onAction="#confirm_AddQuestionController" prefHeight="26.0" prefWidth="164.0" style="-fx-background-color: #4754a2; -fx-background-radius: 5;" text="Confirm" textFill="WHITE">
+         <font>
+            <Font name="Audiowide" size="16.0" />
+         </font></Button>
+      <Text layoutX="31.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Topic :">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font></Text>
+      <Text layoutX="30.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher name :" wrappingWidth="108.99997714161873">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font></Text>
+      <Text layoutX="290.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Question" textAlignment="CENTER" wrappingWidth="255.20000000000005">
+         <font>
+            <Font name="Audiowide" size="31.0" />
+         </font>
+      </Text>
+      <Button fx:id="cancel_AddQuestionController" layoutX="635.0" layoutY="464.0" mnemonicParsing="false" onAction="#cancel_AddQuestionController" prefHeight="26.0" prefWidth="164.0" style="-fx-background-color: #e32021;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Audiowide" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="LecturerNameLbl_AddQuestionController" layoutX="177.0" layoutY="143.0" prefHeight="31.0" prefWidth="139.0" text="Label">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font></Label>
+      <ChoiceBox fx:id="Topic_AddQuestionController" layoutX="171.0" layoutY="196.0" prefHeight="31.0" prefWidth="199.0" />
+      <Text layoutX="31.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question Number :">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Text>
+      <Label fx:id="QuestionNumberLbl_AddQuestionController" layoutX="176.0" layoutY="92.0" prefHeight="31.0" prefWidth="80.0" text="Label">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
