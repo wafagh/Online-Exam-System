@@ -56,31 +56,31 @@ Principals can follow up on their teachers and students by using the analytics.
 
 
 
-git clone https://github.com/wafagh/Online-Exam-System.git or download the folder manually
+Download the folder manually or git clone https://github.com/wafagh/Online-Exam-System.git
 
-open up MySQL and import the database using the file database.sql
+Open up MySQL and import the database using the file database.sql
 
-create a username and password manually in MySQL this will be later used to log in to the system
+Create a username and password manually in MySQL this will be later used to log in to the system
 
-open the folder in the IDE of your choice
+Open the folder in the IDE of your choice
 
-go to DBO.java line 81 and put your MySQL credentials 
+Go to DBO.java line 81 and put your MySQL credentials 
 
-start the server by running SERVERUI.java and then hit the start button
+Start the server by running SERVERUI.java and then hit the start button
 
-start the client by running CLIENTUI.java
+Start the client by running CLIENTUI.java
 
-enter the credentials to log in and that's it!
+Enter the credentials to log in and that's it!
 
 
 
 ## Conclusion
 
 
-A fun project for learning purposes in the field of client-server architecture, Java development, and SQL.
+A great project for learning client-server architecture, Java development, and SQL.
 
-done in the agile methodology with great planning through UML diagrams and meetings,
+Done using the agile methodology with great planning through UML diagrams and meetings.
 
-time management was key to finishing the project on time, using the todolist application and breaking the project into smaller tasks 
+Time management was key to finishing the project on time, using the todolist application, and breaking the project into smaller tasks.
 
 
